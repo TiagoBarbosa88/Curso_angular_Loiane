@@ -10,6 +10,7 @@ import { CursosModule } from './cursos/cursos.module';
 import { Projeto2Component } from './components/projeto2/projeto2.component';
 import { BindingDeClassesComponent } from './binding-de-classes/binding-de-classes.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
+import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-binding.component';
 
 
 
@@ -21,7 +22,8 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
     MeuPrimeiro2Component,
     Projeto2Component,
     BindingDeClassesComponent,
-    EventBindingComponent
+    EventBindingComponent,
+    TwoWayDataBindingComponent
   ],
   imports: [
     BrowserModule,
