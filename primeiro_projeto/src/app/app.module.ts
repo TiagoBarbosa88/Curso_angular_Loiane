@@ -11,6 +11,8 @@ import { Projeto2Component } from './components/projeto2/projeto2.component';
 import { BindingDeClassesComponent } from './binding-de-classes/binding-de-classes.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-binding.component';
+import { InputPropertyComponent } from './input-property/input-property.component';
+import { OuputPropertyComponent } from './ouput-property/ouput-property.component';
 
 
 
@@ -23,7 +25,9 @@ import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-
     Projeto2Component,
     BindingDeClassesComponent,
     EventBindingComponent,
-    TwoWayDataBindingComponent
+    TwoWayDataBindingComponent,
+    InputPropertyComponent,
+    OuputPropertyComponent
   ],
   imports: [
     BrowserModule,
