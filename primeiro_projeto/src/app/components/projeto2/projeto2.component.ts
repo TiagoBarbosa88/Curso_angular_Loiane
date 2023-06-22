@@ -12,6 +12,8 @@ export class Projeto2Component implements OnInit{
 
   urlImagem: string = "http://lorempixel.com.br/500/400/?1";
 
+  
+
 
   getValor(){
     return 1
@@ -21,8 +23,8 @@ export class Projeto2Component implements OnInit{
    return true
   }
 
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
+  ngOnInit() {
+
   }
 
 }
