@@ -13,6 +13,7 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-binding.component';
 import { InputPropertyComponent } from './input-property/input-property.component';
 import { OuputPropertyComponent } from './ouput-property/ouput-property.component';
+import { CicloComponent } from './ciclo/ciclo.component';
 
 
 
@@ -27,7 +28,8 @@ import { OuputPropertyComponent } from './ouput-property/ouput-property.componen
     EventBindingComponent,
     TwoWayDataBindingComponent,
     InputPropertyComponent,
-    OuputPropertyComponent
+    OuputPropertyComponent,
+    CicloComponent
   ],
   imports: [
     BrowserModule,

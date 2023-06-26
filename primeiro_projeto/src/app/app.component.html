@@ -1,4 +1,10 @@
 <div class="container">
+  <!-- Parte 8 -->
+  <h1>Parte 8</h1>
+  <app-ciclo [valorInicial]="valor" *ngIf="!deletarCiclo"></app-ciclo>
+  <hr>
+  <button class="btn btn-primary" (click)="mudarValor()" >Mudar valor</button><br>
+  <button class="btn btn-primary" (click)="destruirCiclo()" >Deletar</button>
   <!-- Parte7 -->
   <h1>Parte 7</h1>
   <app-ouput-property></app-ouput-property>
