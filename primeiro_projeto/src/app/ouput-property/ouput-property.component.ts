@@ -1,21 +1,26 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
-  selector: 'app-ouput-property',
+  selector: 'contador',
   templateUrl: './ouput-property.component.html',
-  styleUrls: ['./ouput-property.component.css']
+  styleUrls: ['./ouput-property.component.css'],
+  // outputs: ['mudouValor']
 })
 export class OuputPropertyComponent {
 
-  valor: number = 0;
+  @Input() valorOutput: any = 0;
+
+  @Output() mudouValor = new EventEmitter()
 
 
   incrementa(){
-    this.valor++;
+    this.valorOutput++;
+    this.mudouValor.emit({novoValor: this.valorOutput})
   }
 
   decrementa(){
-    this.valor--;
+    this.valorOutput--;
+    this.mudouValor.emit({novoValor: this.valorOutput})
   }
 
 }

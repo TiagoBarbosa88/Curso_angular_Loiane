@@ -7,7 +7,9 @@
   <button class="btn btn-primary" (click)="destruirCiclo()" >Deletar</button>
   <!-- Parte7 -->
   <h1>Parte 7</h1>
-  <app-ouput-property></app-ouput-property>
+  <contador [valorOutput]='valorInicial'
+  (mudouValor)="onMundouValor($event)"
+  ></contador>
   <hr>
   <!-- Parte 6 -->
   <h1>Parte 6</h1>
