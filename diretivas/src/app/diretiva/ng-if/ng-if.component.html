@@ -1,0 +1,37 @@
+
+<section>
+  <h1>Diretiva *ngIf</h1>
+
+  <div *ngIf="cursos.length > 0">
+    <p>Lista de cursos aqui.</p>
+  </div>
+
+  <div *ngIf="cursos.length == 0">
+    <p>Não existem cursos para serem listados</p>
+  </div>
+
+  <h2>Usar uma variável como exemplo</h2>
+  <div *ngIf="mostrarCursos">
+    <p>Lista de cursos aqui 2</p>
+  </div>
+
+  <div *ngIf="!mostrarCursos">
+    <p>Não existem cursos para serem listados</p>
+  </div>
+  <br>
+
+  <button (click)="onMostrarCursos()">Mostrar ou esconder cursos</button><br>
+
+  <h2>Hiddem como alternativa</h2>
+  <div [hidden]="mostrarCursos">
+    <p>Lista de cursos aqui 2</p>
+  </div>
+
+  <div [hidden]="!mostrarCursos">
+    <p>Não existem cursos para serem listados</p>
+  </div>
+
+
+
+</section>
+
