@@ -6,6 +6,8 @@ import { NgIfComponent } from './diretiva/ng-if/ng-if.component';
 import { SwitchCaseComponent } from './diretiva/switch-case/switch-case.component';
 import { NgForComponent } from './diretiva/ng-for/ng-for.component';
 import { NgClassComponent } from './diretiva/ng-class/ng-class.component';
+import { NgStyleComponent } from './diretiva/ng-style/ng-style.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -13,10 +15,12 @@ import { NgClassComponent } from './diretiva/ng-class/ng-class.component';
     NgIfComponent,
     SwitchCaseComponent,
     NgForComponent,
-    NgClassComponent
+    NgClassComponent,
+    NgStyleComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

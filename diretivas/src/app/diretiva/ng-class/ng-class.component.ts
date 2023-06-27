@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class NgClassComponent {
 
+  meuFavorito: boolean = false;
+
+  checked: boolean = false
+
+  onClick(){
+    this.meuFavorito = !this.meuFavorito
+  }
+
+  onCheck(){
+    this.checked = !this.checked
+  }
+
 }

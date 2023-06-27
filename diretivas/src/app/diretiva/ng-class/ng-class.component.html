@@ -1,3 +1,28 @@
-<div class="container">
-  
+<div class="container d-flex">
+  <h1 class="m-2">
+    <i class="starIcon"
+    [class.bi-star-fill]="meuFavorito"
+    [class.bi-star]="!meuFavorito"
+    (click)="onClick()"
+    ></i>
+  </h1>
+
+  <h1 class="m-2">
+    <i class="starIcon"
+      [ngClass]="{
+        'bi-star-fill': !meuFavorito,
+        'bi-star': meuFavorito }"
+      (click)="onClick()"
+    ></i>
+  </h1>
+
+  <h1 class="m-2">
+    <i class="bag-check"
+    [ngClass]="{
+      'bi-bag-check': checked,
+      'bi-bag-check-fill': !checked,
+  }"
+  (click)="onCheck()"
+    ></i>
+  </h1>
 </div>
