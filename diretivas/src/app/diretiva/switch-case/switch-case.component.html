@@ -1,8 +1,26 @@
 <section>
   <div>
-    <p>Switch-case</p>
-    <button class="btn btn-primary">Mostrar</button>
-
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="nav navbar-nav">
+          <a class="nav-item nav-link"
+          [class.active]="aba == 'home'"
+          (click)="aba = 'home'"
+          >Home</a>
+          <a class="nav-item nav-link"
+          [class.active]="aba == 'mapa'"
+          (click)="aba = 'mapa'"
+          >Mapa</a>
+          <a class="nav-item nav-link"
+          [class.active]="aba == 'lista'"
+          (click)="aba = 'lista'"
+          >Lista</a>
+        </div>
+    </nav>
   </div>
 </section>
+<div class="container" [ngSwitch]="aba">
+  <h2 *ngSwitchCase="'mapa'">Modo Mapa Ativado</h2>
+  <h2 *ngSwitchCase="'lista'">Modo Lista Ativado</h2>
+  <h2 *ngSwitchDefault>Home</h2>
+</div>
 

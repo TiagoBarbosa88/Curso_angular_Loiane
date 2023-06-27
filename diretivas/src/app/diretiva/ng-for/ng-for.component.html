@@ -1,0 +1,24 @@
+<div class="container">
+  <h1>Diretiva ngFor</h1>
+  <h2>Cursos</h2>
+  <ul>
+    <li *ngFor="let curso of cursos let i = index">
+     {{ i + 1 }} - {{ curso }}
+    </li>
+  </ul>
+  <h2>Filmes Favoritos</h2>
+  <ul>
+    <li *ngFor="let filmesFavorito of filmesFavoritos let i = index">
+      {{ i + 1 }} - {{ filmesFavorito }}
+    </li>
+  </ul>
+  <!--
+    <h3>Removendo o * e usando o template</h3>
+  <ul>
+    <li ng-template="ngFor let curso of cursos let i = index">
+      {{ i + 1 }} - {{ curso }}
+    </li>
+  </ul>
+
+-->
+</div>

@@ -30,8 +30,10 @@
   <div [hidden]="!mostrarCursos">
     <p>Não existem cursos para serem listados</p>
   </div>
-
-
-
 </section>
+
+<ng-template [ngIf]="mostrarCursos">
+  <div>Lista de Cursos</div>
+</ng-template>
+
 
