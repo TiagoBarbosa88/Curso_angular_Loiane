@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      <div id="list-example" class="list-group">
+        <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+      </div>
+    </div>
+    <div class="col-8">
+      <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+        <h4 id="list-item-1">Item 1</h4>
+        <ng-content select=".titulo"></ng-content>
+
+        <h4 id="list-item-2">Item 2</h4>
+        <ng-content select=".conteudo"></ng-content>
+
+        <h4 id="list-item-3">Item 3</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore tempora laboriosam iure, voluptatum autem suscipit vitae libero ipsam odit natus placeat dolore necessitatibus alias perferendis. Atque cupiditate nostrum quibusdam unde.</p>
+      </div>
+    </div>
+  </div>
+</div>
